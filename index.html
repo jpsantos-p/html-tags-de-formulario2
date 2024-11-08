@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario 2</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <form>
+        <fieldset>
+            <legend> dados pessoais</legend>
+            <div>
+                <label for="nome">nome</label>
+                <input id="Nome" type="text">
+            </div>
+
+            <div>
+                <label for="email">email</label>
+                <input id="email" type="email">
+
+            </div>
+            <div>
+                <label for="telefone">telefone</label>
+                <input id="telefone" type="text">
+            </div>
+            
+
+
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend> dados cadastrais</legend>
+            <div>
+                <label for="endereco">Endereço</label>
+                <input id="endereco" type="text" placeholder="av/rua">
+            <div>
+                <label for="bairro">bairro</label>
+                <input id="bairro" type="text">
+            </div>
+            <div>
+                <label for="cidade">cidade</label>
+                <input id="cidade" type="text" list="cidades">
+                <datalist id="cidades">
+                    <option>Fortaleza</option>
+                    <option>Fortim</option>
+                    <option>Caucaia</option>
+                    <option>Eusébio</option>
+                    <option>Aquiraz</option>
+                    <option>Maracanaú</option>
+                    <option>Maranguape</option>
+                </datalist>
+                <div>
+                    <label for="estado">Estado</label>
+                    <select id="estado">
+                        <option disabled selected>Escolha um estado</option>
+                        <option>Ceará</option>
+                        <option>Bahia</option>
+                        <option>Acre</option>
+                        <option>Distrito Federal</option>
+                    </select>
+                </div>
+            
+            </div>
+    
+
+        </fieldset>
+
+        <fieldset>
+            <legend> dados do curso</legend>
+            <div>
+                <label>Cursos</label>
+                <ul>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            Fullstack
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            Markenting
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            UI/UX
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            Data Analytics
+                        </label>
+                    </li>
+                </ul>
+            
+                
+            </div>
+
+            <div>
+                <label>turno</label>
+                <ul>
+                    <li>
+                        <label>
+                            <input name="turno" type="radio">
+                            Noite
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="turno" type="radio">
+                            Manhã
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input name="turno" type="radio">
+                            Tarde
+                        </label>
+                    </li>
+                  
+                </ul>
+            </div>
+
+        </fieldset>
+    </form>
+</body>
+
+</html>
